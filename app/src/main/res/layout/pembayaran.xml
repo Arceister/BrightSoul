@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pembayaran">>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/buttonback"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="320dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/buttonback"
+            android:layout_alignTop="@id/buttonback"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="FIND PLACE"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="328dp"
+            android:layout_height="625dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/bg" />
+
+        <ImageView
+            android:id="@+id/bgpesan2"
+            android:layout_width="332dp"
+            android:layout_height="66dp"
+            android:layout_alignStart="@+id/background"
+            android:layout_alignTop="@+id/background"
+            android:layout_alignEnd="@+id/background"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginEnd="50dp"
+            app:srcCompat="@drawable/buttonbg" />
+
+        <TextView
+            android:id="@+id/pesan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/bgpesan2"
+            android:layout_alignTop="@id/bgpesan2"
+            android:layout_alignEnd="@id/bgpesan2"
+            android:layout_alignBottom="@id/bgpesan2"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="15sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="PEMBAYARAN"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="0dp"
+            android:layout_height="138dp"
+            android:layout_alignStart="@id/background"
+            android:layout_alignTop="@id/bgpesan2"
+            android:layout_alignEnd="@id/background"
+            android:layout_marginTop="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/group122" />
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/imageView19"
+            android:layout_alignEnd="@id/imageView19"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="110dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="00:00"
+            android:textAlignment="viewEnd"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/pilihmetode2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/imageView19"
+            android:layout_alignTop="@id/imageView19"
+            android:layout_alignEnd="@id/imageView19"
+            android:layout_alignBottom="@id/imageView19"
+            android:layout_marginTop="65dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Pilih salah Satu"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/buttonchange2"
+            android:layout_width="121dp"
+            android:layout_height="27dp"
+
+            android:layout_alignStart="@id/imageView19"
+            android:layout_alignTop="@id/imageView19"
+            android:layout_alignEnd="@id/imageView19"
+            android:layout_marginTop="100dp"
+            android:background="#00FFFFFF"
+            android:contentDescription="TODO"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/buttonbg2" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="46dp"
+            android:layout_height="48dp"
+            android:layout_alignStart="@id/imageView19"
+            android:layout_alignTop="@id/imageView19"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/bank" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/buttonchange2"
+            android:layout_alignTop="@id/buttonchange2"
+            android:layout_alignEnd="@id/buttonchange2"
+            android:layout_alignBottom="@id/buttonchange2"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="CHANGE"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="308dp"
+            android:layout_height="74dp"
+            android:layout_alignStart="@id/background"
+            android:layout_alignTop="@id/background"
+            android:layout_alignEnd="@id/background"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="24dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/group13" />
+
+        <Button
+            android:id="@+id/buttontambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/imageView21"
+            android:layout_alignTop="@id/imageView21"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="26dp"
+            android:background="#00FFFFFF"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Tambah"
+            android:textColor="#077369"
+            app:iconTint="#00FFFFFF" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="307dp"
+            android:layout_height="231dp"
+            android:layout_alignStart="@id/background"
+            android:layout_alignTop="@id/imageView21"
+            android:layout_alignEnd="@id/background"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="24dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/group14" />
+
+        <TextView
+            android:id="@+id/biayakonsultasi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/imageView22"
+            android:layout_alignTop="@id/imageView22"
+            android:layout_alignEnd="@id/imageView22"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Rp250.000"
+            android:textAlignment="viewEnd"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/biayaadmin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/imageView22"
+            android:layout_alignTop="@id/biayakonsultasi2"
+            android:layout_alignEnd="@id/imageView22"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Rp2.000"
+            android:textAlignment="viewEnd"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/promo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/imageView22"
+            android:layout_alignTop="@id/biayaadmin2"
+            android:layout_alignEnd="@id/imageView22"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Rp0.0"
+            android:textAlignment="viewEnd"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/total2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/imageView22"
+            android:layout_alignTop="@id/promo2"
+            android:layout_alignEnd="@id/imageView22"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Rp252.000"
+            android:textAlignment="viewEnd"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/buttonlanjut2"
+            android:layout_width="237dp"
+            android:layout_height="55dp"
+            android:layout_alignStart="@+id/background"
+            android:layout_alignEnd="@+id/background"
+            android:layout_alignBottom="@id/background"
+            android:layout_alignParentBottom="false"
+            android:layout_marginStart="89dp"
+            android:layout_marginEnd="84dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitCenter"
+            android:src="@drawable/buttonbg2" />
+
+        <TextView
+            android:id="@+id/textlanjut3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/buttonlanjut2"
+            android:layout_alignTop="@id/buttonlanjut2"
+            android:layout_alignEnd="@id/buttonlanjut2"
+            android:layout_alignBottom="@id/buttonlanjut2"
+            android:layout_alignParentBottom="true"
+
+            android:fontFamily="@font/poppins_semibold"
+            android:text="LANJUT"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+</ScrollView>

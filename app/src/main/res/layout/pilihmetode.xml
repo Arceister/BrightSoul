@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pilihmetode">>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/buttonback"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="320dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="328dp"
+            android:layout_height="625dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/bg" />
+
+        <ImageView
+            android:id="@+id/bgpesan2"
+            android:layout_width="332dp"
+            android:layout_height="66dp"
+            android:layout_alignStart="@+id/background"
+            android:layout_alignTop="@+id/background"
+            android:layout_alignEnd="@+id/background"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="-60dp"
+            android:layout_marginEnd="50dp"
+            app:srcCompat="@drawable/buttonbg" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="362dp"
+            android:layout_height="76dp"
+            android:layout_alignStart="@id/background"
+            android:layout_alignTop="@id/background"
+            android:layout_alignEnd="@id/background"
+            android:layout_marginTop="-15dp"
+            app:srcCompat="@drawable/group15" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="0dp"
+            android:layout_height="73dp"
+            android:layout_alignStart="@id/background"
+            android:layout_alignTop="@id/imageView23"
+            android:layout_alignEnd="@id/background"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/group16" />
+
+        <ImageButton
+            android:id="@+id/buttoncredit2"
+            android:layout_width="55dp"
+            android:layout_height="53dp"
+            android:layout_alignStart="@id/imageView24"
+            android:layout_alignTop="@id/imageView24"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/check" />
+
+        <TextView
+            android:id="@+id/pesan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/bgpesan2"
+            android:layout_alignTop="@id/bgpesan2"
+            android:layout_alignEnd="@id/bgpesan2"
+            android:layout_alignBottom="@id/bgpesan2"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="15sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="PEMBAYARAN"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_alignStart="@id/background"
+            android:layout_alignTop="@id/imageView24"
+            android:layout_alignEnd="@id/background"
+            android:layout_marginTop="120dp"
+            app:srcCompat="@drawable/rectangle140" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/imageView25"
+            android:layout_alignBottom="@id/imageView25"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="70dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Bank Transfer"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/imageView29"
+            android:layout_alignTop="@id/imageView29"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Biaya Admin Rp2.000"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="37dp"
+            android:layout_height="34dp"
+            android:layout_alignStart="@id/imageView25"
+            android:layout_alignTop="@id/imageView25"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/bank" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/imageView29"
+            android:layout_alignTop="@id/imageView29"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="BRI TRANSFER"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/buttonbri2"
+            android:layout_width="53dp"
+            android:layout_height="51dp"
+            android:layout_alignStart="@id/imageView25"
+            android:layout_alignTop="@id/imageView25"
+            android:layout_marginStart="255dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="Bank1"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/vector" />
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_alignStart="@id/background"
+            android:layout_alignTop="@id/imageView25"
+            android:layout_alignEnd="@id/background"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/rectangle140" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/imageView30"
+            android:layout_alignTop="@id/imageView30"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Biaya Admin Rp2.000"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView30"
+            android:layout_width="37dp"
+            android:layout_height="34dp"
+            android:layout_alignStart="@id/imageView26"
+            android:layout_alignTop="@id/imageView26"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/bank" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/imageView30"
+            android:layout_alignTop="@id/imageView30"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="BRI TRANSFER"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/buttonbri3"
+            android:layout_width="53dp"
+            android:layout_height="51dp"
+            android:layout_alignStart="@id/imageView25"
+            android:layout_alignTop="@id/imageView26"
+            android:layout_marginStart="255dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="Bank1"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/vector" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_alignStart="@id/background"
+            android:layout_alignTop="@id/imageView26"
+            android:layout_alignEnd="@id/background"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/rectangle140" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/imageView31"
+            android:layout_alignTop="@id/imageView31"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Biaya Admin Rp2.000"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="37dp"
+            android:layout_height="34dp"
+            android:layout_alignStart="@id/imageView27"
+            android:layout_alignTop="@id/imageView27"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/bank" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/imageView31"
+            android:layout_alignTop="@id/imageView31"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="BRI TRANSFER"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/buttonbri4"
+            android:layout_width="53dp"
+            android:layout_height="51dp"
+            android:layout_alignStart="@id/imageView25"
+            android:layout_alignTop="@id/imageView27"
+            android:layout_marginStart="255dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="Bank1"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/vector" />
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_alignStart="@id/background"
+            android:layout_alignTop="@id/imageView27"
+            android:layout_alignEnd="@id/background"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/rectangle140" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/textView28"
+            android:layout_alignTop="@id/imageView28"
+            android:layout_marginTop="-20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Bank Transfer"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/buttonbri5"
+            android:layout_width="53dp"
+            android:layout_height="51dp"
+            android:layout_alignStart="@id/imageView28"
+            android:layout_alignTop="@id/imageView28"
+            android:layout_marginStart="255dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="Bank1"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/credit" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/imageView32"
+            android:layout_alignTop="@id/imageView32"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Biaya Admin Rp2.000"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@id/imageView28"
+            android:layout_alignTop="@id/imageView28"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/shop" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/imageView32"
+            android:layout_alignTop="@id/imageView32"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="BRI TRANSFER"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+</ScrollView>

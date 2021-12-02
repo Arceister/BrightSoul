@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "594814733597",
+    "project_id": "login-register-bright-soul",
+    "storage_bucket": "login-register-bright-soul.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594814733597:android:f6087a91c15862c81425f4",
+        "android_client_info": {
+          "package_name": "id.kotlin.bright_soul"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594814733597-smlnot5cjakk8lsg6pqegqgo5qh77ckj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.kotlin.bright_soul",
+            "certificate_hash": "2581c13e398ff81be3e38a23788a6309143222c4"
+          }
+        },
+        {
+          "client_id": "594814733597-vvusd2d1j974lqn1ss0soikf42dekffq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJozD3fJWuhl6KUUsKmEYHW8Ne1FnMSdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594814733597-vvusd2d1j974lqn1ss0soikf42dekffq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
