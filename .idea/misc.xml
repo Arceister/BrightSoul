@@ -32,13 +32,15 @@
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.17691256830601093" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_navigasi.xml" value="0.17691256830601093" />
-        <entry key="app/src/main/res/layout/activity_register.xml" value="0.17691256830601093" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.4" />
         <entry key="app/src/main/res/layout/fragment_dokter.xml" value="0.17691256830601093" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.21736111111111112" />
         <entry key="app/src/main/res/layout/fragment_konsultasi.xml" value="0.17691256830601093" />
         <entry key="app/src/main/res/layout/fragment_list_mynotes.xml" value="0.17691256830601093" />
-        <entry key="app/src/main/res/layout/fragment_profil.xml" value="0.11458333333333333" />
+        <entry key="app/src/main/res/layout/fragment_profil.xml" value="0.4" />
         <entry key="app/src/main/res/layout/fragment_profil2.xml" value="0.11458333333333333" />
         <entry key="app/src/main/res/layout/fragment_tambahnotes.xml" value="0.17691256830601093" />
+        <entry key="app/src/main/res/layout/notes_item.xml" value="0.21736111111111112" />
       </map>
     </option>
   </component>

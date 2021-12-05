@@ -74,7 +74,6 @@
             android:gravity="center_vertical"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
-            android:text="Sumirna Faurijah"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
@@ -100,13 +99,12 @@
             android:layout_alignEnd="@+id/nama"
             android:layout_marginTop="10dp"
             android:background="@drawable/rounded_login"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_vertical"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
-            android:text="06 Januari 2001"
-            android:gravity="center_vertical"
-            android:fontFamily="@font/roboto"
-            android:textSize="18sp"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/txtjeniskelamin"
@@ -130,13 +128,12 @@
             android:layout_alignEnd="@+id/nama"
             android:layout_marginTop="10dp"
             android:background="@drawable/rounded_login"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_vertical"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
-            android:text="Perempuan"
-            android:gravity="center_vertical"
-            android:fontFamily="@font/roboto"
-            android:textSize="18sp"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/txtpekerjaan"
@@ -160,13 +157,12 @@
             android:layout_alignEnd="@+id/nama"
             android:layout_marginTop="10dp"
             android:background="@drawable/rounded_login"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_vertical"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
-            android:text="Mahasiswa"
-            android:gravity="center_vertical"
-            android:fontFamily="@font/roboto"
-            android:textSize="18sp"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
         <LinearLayout
             android:id="@+id/fifth"

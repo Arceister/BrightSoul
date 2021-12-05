@@ -58,6 +58,10 @@
         <font color="#000000">Sudah punya akun?</font>
         <b><font color="#479E50">Masuk </font></b>
     </string>
+    <string-array name="dropDownJenisKelamin">
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
 
 
     <!-- TODO: Remove or change this placeholder text -->

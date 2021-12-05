@@ -62,96 +62,196 @@
             app:cardBackgroundColor="@color/white"
             card_view:cardCornerRadius="25dp">
 
-            <LinearLayout
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
+                android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/txtDaftar"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:text="Daftar Sekarang"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/txt4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:text="@string/sudah_punya_akun"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="23dp"
-                    android:layout_marginTop="23dp"
-                    android:fontFamily="@font/roboto"
-                    android:text="@string/email_atau_nomor_telepon"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-
-                <EditText
-                    android:id="@+id/email"
-                    android:layout_width="260dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/rounded_login"
-                    android:fontFamily="@font/roboto"
-                    android:paddingLeft="25dp"
-                    android:paddingRight="25dp"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/txt3"
-                    android:layout_width="match_parent"
-                    android:layout_height="22dp"
-                    android:layout_marginStart="23dp"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/roboto"
-                    android:text="@string/kata_sandi"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-
-                <EditText
-                    android:id="@+id/katasandi"
-                    android:layout_width="260dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/rounded_login"
-                    android:fontFamily="@font/roboto"
-                    android:paddingLeft="25dp"
-                    android:paddingRight="25dp"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:inputType="textPassword"
-                    android:hint="password"/>
-
-                <Button
-                    android:id="@+id/daftar"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/rounded_button"
-                    android:fontFamily="@font/poppins_semibold"
                     android:gravity="center_horizontal"
-                    android:text="Daftar"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:backgroundTint="#DFEEEA" />
-            </LinearLayout>
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtDaftar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Daftar Sekarang"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/sudah_punya_akun"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="23dp"
+                        android:layout_marginTop="23dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/email_atau_nomor_telepon"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="260dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_login"
+                        android:fontFamily="@font/roboto"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:hint="name@email.com"/>
+
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="23dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/kata_sandi"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/katasandi"
+                        android:layout_width="260dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_login"
+                        android:fontFamily="@font/roboto"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:inputType="textPassword"
+                        android:hint="password"/>
+
+                    <TextView
+                        android:id="@+id/txtNamaRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="23dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Nama"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/namaRegister"
+                        android:layout_width="260dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_login"
+                        android:fontFamily="@font/roboto"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:hint="Nama Lengkap"/>
+
+                    <TextView
+                        android:id="@+id/txtTanggalLahirRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="23dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Tanggal Lahir"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/tanggalLahirRegister"
+                        android:layout_width="260dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_login"
+                        android:fontFamily="@font/roboto"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:hint="DD BULAN YYYY"/>
+
+                    <TextView
+                        android:id="@+id/txtJenisKelaminRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="23dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Jenis Kelamin"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerJenisKelamin"
+                        android:layout_width="260dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_login"
+                        android:fontFamily="@font/roboto"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/txtPekerjaanRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="23dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Pekerjaan"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/pekerjaanRegister"
+                        android:layout_width="260dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/rounded_login"
+                        android:fontFamily="@font/roboto"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:hint="mis: Mahasiswa"/>
+
+                    <Button
+                        android:id="@+id/daftar"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/rounded_button"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:gravity="center_horizontal"
+                        android:text="Daftar"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:backgroundTint="#DFEEEA" />
+                </LinearLayout>
+            </ScrollView>
 
         </androidx.cardview.widget.CardView>
     </RelativeLayout>

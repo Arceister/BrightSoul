@@ -9,6 +9,7 @@ import android.text.TextUtils.replace
 import android.widget.ImageButton
 import androidx.appcompat.app.ActionBar
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import id.kotlin.bright_soul.databinding.ActivityNavigasiBinding
 import id.kotlin.bright_soul.databinding.ActivityRegisterBinding
 
@@ -20,6 +21,8 @@ class navigasi : AppCompatActivity() {
 
     private lateinit var firebaseAuth: FirebaseAuth
 
+    private lateinit var fStore: FirebaseFirestore
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -30,6 +33,8 @@ class navigasi : AppCompatActivity() {
         actionBar.title = "Masuk"
 
         firebaseAuth = FirebaseAuth.getInstance()
+        fStore = FirebaseFirestore.getInstance()
+
         checkUser()
     }
 

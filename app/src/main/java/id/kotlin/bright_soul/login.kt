@@ -52,7 +52,7 @@ class login : AppCompatActivity() {
 
     private fun validateData() {
         email = binding.email.text.toString().trim()
-        katasandi = binding.katasandi.toString().trim()
+        katasandi = binding.katasandi.text.toString().trim()
 
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             binding.email.error= "Format email salah"
@@ -71,7 +71,8 @@ class login : AppCompatActivity() {
                 progressDialog.dismiss()
                 val firebaseUser = firebaseAuth.currentUser
                 val email = firebaseUser!!.email
-                Toast.makeText(this,"masuk sebagai  $email", Toast.LENGTH_SHORT).show()
+                val userId = firebaseUser!!.uid
+                Toast.makeText(this,"masuk sebagai $email dan user id $userId", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this,navigasi::class.java))
                 finish()
             }

@@ -125,7 +125,7 @@
     <EditText
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="136dp"
-        android:layout_height="19dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Terdekat..."
@@ -140,7 +140,7 @@
     <EditText
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="136dp"
-        android:layout_height="20dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Pilih Tanggal"
