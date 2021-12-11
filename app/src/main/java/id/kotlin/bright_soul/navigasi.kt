@@ -30,7 +30,8 @@ class navigasi : AppCompatActivity() {
         setContentView(binding.root)
 
         actionBar = supportActionBar!!
-        actionBar.title = "Masuk"
+//        actionBar.title = "Masuk"
+        actionBar.hide()
 
         firebaseAuth = FirebaseAuth.getInstance()
         fStore = FirebaseFirestore.getInstance()

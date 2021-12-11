@@ -113,7 +113,7 @@
             android:layout_alignEnd="@+id/katasandi"
             android:layout_marginStart="0dp"
             android:layout_marginTop="30dp"
-            android:text="@string/remember_me"
+            android:text="Remember Email"
             android:fontFamily="@font/roboto"
             android:textSize="16sp"
             android:textColor="@color/black" />

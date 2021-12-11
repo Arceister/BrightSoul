@@ -1,14 +1,14 @@
 package id.kotlin.bright_soul
 
 import android.app.ProgressDialog
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Patterns
-import android.widget.Button
-import android.widget.ImageButton
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.ActionBar
 import com.google.firebase.auth.FirebaseAuth
 import id.kotlin.bright_soul.databinding.ActivityLoginBinding
@@ -22,6 +22,13 @@ class login : AppCompatActivity() {
     private lateinit var progressDialog: ProgressDialog
 
     private lateinit var firebaseAuth: FirebaseAuth
+
+    private lateinit var emailPengguna: EditText
+
+    private val EMAIL_KEY = ""
+    private val PREF_NAME = "Pref"
+    private lateinit var sharedPreference: SharedPreferences
+
     private var email = ""
     private var katasandi = ""
 
@@ -37,6 +44,10 @@ class login : AppCompatActivity() {
         progressDialog.setTitle("Mohon tunggu")
         progressDialog.setMessage("Masuk..")
         progressDialog.setCanceledOnTouchOutside(false)
+
+        sharedPreference = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
+        val emailPenggunaRemind = sharedPreference.getString(EMAIL_KEY, "0")
+        binding.email.setText(emailPenggunaRemind)
 
         firebaseAuth = FirebaseAuth.getInstance()
         checkUser()
@@ -65,9 +76,12 @@ class login : AppCompatActivity() {
     }
 
     private fun firebaseLogin(){
+        val editor: SharedPreferences.Editor = sharedPreference.edit()
         progressDialog.show()
         firebaseAuth.signInWithEmailAndPassword(email, katasandi)
             .addOnSuccessListener {
+                editor.putString(EMAIL_KEY, email)
+                editor.apply()
                 progressDialog.dismiss()
                 val firebaseUser = firebaseAuth.currentUser
                 val email = firebaseUser!!.email
@@ -90,14 +104,4 @@ class login : AppCompatActivity() {
         }
     }
 
-
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_login)
-//        val login = findViewById<Button>(R.id.login)
-//        login.setOnClickListener{
-//            val Intent = Intent(this,navigasi::class.java)
-//            startActivity(Intent)
-//        }
-//    }
 }
