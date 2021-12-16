@@ -25,8 +25,6 @@ class login : AppCompatActivity() {
 
     private lateinit var emailPengguna: EditText
 
-    private val EMAIL_KEY = ""
-    private val PREF_NAME = "Pref"
     private lateinit var sharedPreference: SharedPreferences
 
     private var email = ""
@@ -45,8 +43,8 @@ class login : AppCompatActivity() {
         progressDialog.setMessage("Masuk..")
         progressDialog.setCanceledOnTouchOutside(false)
 
-        sharedPreference = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
-        val emailPenggunaRemind = sharedPreference.getString(EMAIL_KEY, "0")
+        sharedPreference = getSharedPreferences("PREF_NAME", Context.MODE_PRIVATE)
+        val emailPenggunaRemind = sharedPreference.getString("EMAIL_KEY", "")
         binding.email.setText(emailPenggunaRemind)
 
         firebaseAuth = FirebaseAuth.getInstance()
@@ -58,6 +56,17 @@ class login : AppCompatActivity() {
 
         binding.login.setOnClickListener{
             validateData()
+        }
+    }
+
+    private fun saveEmailSharedPreference(email: String) {
+        val editor: SharedPreferences.Editor = sharedPreference.edit()
+        if (binding.rememberMe.isChecked) {
+            editor.putString("EMAIL_KEY", email)
+            editor.apply()
+        } else {
+            editor.remove("EMAIL_KEY")
+            editor.apply()
         }
     }
 
@@ -76,12 +85,10 @@ class login : AppCompatActivity() {
     }
 
     private fun firebaseLogin(){
-        val editor: SharedPreferences.Editor = sharedPreference.edit()
         progressDialog.show()
         firebaseAuth.signInWithEmailAndPassword(email, katasandi)
             .addOnSuccessListener {
-                editor.putString(EMAIL_KEY, email)
-                editor.apply()
+                saveEmailSharedPreference(email)
                 progressDialog.dismiss()
                 val firebaseUser = firebaseAuth.currentUser
                 val email = firebaseUser!!.email

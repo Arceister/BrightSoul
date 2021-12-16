@@ -4,17 +4,18 @@ import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
 import android.text.TextUtils
+import android.text.TextWatcher
 import android.util.Log
 import android.util.Patterns
-import android.widget.ArrayAdapter
-import android.widget.Spinner
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.ActionBar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import id.kotlin.bright_soul.databinding.ActivityRegisterBinding
+import io.reactivex.rxjava3.core.Observable
+import java.util.concurrent.TimeUnit
 
 class register : AppCompatActivity() {
 
